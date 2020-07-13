@@ -1,6 +1,4 @@
 import React from 'react'
-import styles from './styles'
-import { withStyles } from '@material-ui/core'
 import { ThemeProvider } from '@material-ui/styles'
 import TaskBoard from '../Taskboard'
 import theme from './../../commons/Theme'
@@ -9,12 +7,14 @@ import store from './../../redux/store'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import GlobalLoading from '../../components/GlobalLoading'
+import ModalCommon from '../../components/Modal'
 
-const App = props => {
+const App = () => {
   	return (
 	    <Provider store={store}>
 	    	<ThemeProvider theme={theme}>
 	    		<ToastContainer />
+				<ModalCommon />
 	    		<GlobalLoading />
 		    	<TaskBoard />
 		    </ThemeProvider>
@@ -22,4 +22,4 @@ const App = props => {
   	);
 }
 
-export default withStyles(styles)(App)
+export default App

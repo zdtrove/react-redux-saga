@@ -3,9 +3,8 @@ import styles from './styles'
 import { withStyles } from '@material-ui/styles'
 import LoadingIcon from './../../assets/images/loading.gif'
 import PropTypes from 'prop-types'
-import { bindActionCreators, compose } from 'redux'
+import { compose } from 'redux'
 import { connect } from 'react-redux'
-import * as uiActions from './../../redux/ui/uiActions'
 
 const GlobalLoading = ({classes, showLoading}) => {
 	let xhtml = null

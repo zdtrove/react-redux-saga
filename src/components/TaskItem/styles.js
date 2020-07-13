@@ -1,4 +1,7 @@
 const styles = () => ({
+	card: {
+		marginTop: 16
+	},
 	cardActions: {
 		display: 'flex',
 		alignItems: 'center',

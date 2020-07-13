@@ -1,9 +1,9 @@
-import * as uiTypes from './uiTypes'
+import * as types from './uiTypes'
 
 export const showLoading = () => ({
-	type: uiTypes.SHOW_LOADING
+	type: types.SHOW_LOADING
 })
 
 export const hideLoading = () => ({
-	type: uiTypes.HIDE_LOADING
+	type: types.HIDE_LOADING
 })
